@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Smart City</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("images.jpg"); /* Update with actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            grid-gap: 20px; /* Space between the sections */
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .iframe-box {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .iframe-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            border: none;
+        }
+
+        .giphy-box {
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+
+        .giphy-box iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .page-layout {
+                grid-template-columns: 1fr; /* Stack sections in one column */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-layout">
+        <!-- Left Section with Canva Element -->
+        <div class="iframe-box">
+            <iframe loading="lazy"
+                src="https://www.canva.com/design/DAGQz2HYFPY/dVgtGscOPK9tJuRO1Op66w/view?embed"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- Middle Section with Text Content -->
+        <div class="container">
+            <h1>Green Smart City: Data and Statistics</h1>
+            <p>India's total CO₂ emissions reached ~2.88 billion metric tons in 2021. Urban areas contribute nearly 50% of these emissions.</p>
+
+            <h2>Key Insights:</h2>
+            <ul>
+                <li>Transportation is the largest source of emissions in most Indian cities.</li>
+                <li>Coal-based electricity generation contributes significantly in cities like Chennai and Kolkata.</li>
+                <li>Industrial activities in Mumbai, Chennai, and Delhi are major contributors to urban emissions.</li>
+                <li>Cities are slowly adopting renewable energy and public transport improvements to reduce CO₂ emissions.</li>
+            </ul>
+
+            <!-- Giphy Embed -->
+            <div class="giphy-box">
+                <iframe src="https://giphy.com/embed/aAy4947U1yIiQ" frameBorder="0" allowFullScreen></iframe>
+            </div>
+        </div>
+
+        <!-- Right Section with Canva Element -->
+        <div class="iframe-box">
+            <iframe loading="lazy"
+                src="https://www.canva.com/design/DAGQ0PADZ_4/lz2YwxPmRNtY70EHykSkoA/view?embed"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Add JavaScript if needed
+    </script>
+
+</body>
+</html>
